@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vehicle Management</title>
+<script>
+function addvehicle(){
+	var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://localhost:8080/vehicle-management/rest/vehiclemanage/addvehicle", true);
+    xhttp.send();
+}
+</script>
+</head>
+<body>
+<h1>Vehicle Management</h1>
+<a href="http://localhost:8080/vehicle-management/AddVehicle.html">Add Vehicle</a><br><br>
+<a href="http://localhost:8080/vehicle-management/DeleteVehicle.html">Delete Vehicle</a><br><br>
+<a href="http://localhost:8080/vehicle-management/AddVehicle.html">Update Vehicle</a><br><br>
+<a href="http://localhost:8080/vehicle-management/SearchVehicle.html">Search Vehicle</a><br><br>
+
+</body>
+</html>

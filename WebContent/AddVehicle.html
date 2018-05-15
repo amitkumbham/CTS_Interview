@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Vehicle</title>
+<script>
+function addvehicle(){
+	var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://localhost:8080/vehicle-management/rest/vehiclemanage/addvehicle", true);
+    xhttp.send();
+}
+</script>
+</head>
+<body>
+<h1>Add Vehicle</h1>
+
+<form method="post" action="http://localhost:8080/vehicle-management/rest/vehiclemanage/addVehicle">
+Number: <input type="text" name="vehicleNumber" id="vehicleNumber" /><br><br>
+Type: <input type="text" name="vehicleType" id="vehicleType" /><br><br>
+Brand: <input type="text" name="vehicleBrand" id="vehicleBrand" /><br><br>
+<input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
